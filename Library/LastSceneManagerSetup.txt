@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Corgi2D/Mesa1.unity
+- path: Assets/CorgiEngine/Demos/LevelSelection/LevelSelection.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
