@@ -97,12 +97,12 @@ MonoBehaviour:
   ReloadStopAnimationParameter: 
   WeaponAngleAnimationParameter: 
   WeaponAngleRelativeAnimationParameter: 
-  WeaponStartMMFeedback: {fileID: 7407129733894985408}
-  WeaponUsedMMFeedback: {fileID: 7196056548705350578}
-  WeaponStopMMFeedback: {fileID: 164703202321863857}
+  WeaponStartMMFeedback: {fileID: 0}
+  WeaponUsedMMFeedback: {fileID: 0}
+  WeaponStopMMFeedback: {fileID: 0}
   WeaponReloadMMFeedback: {fileID: 0}
   WeaponReloadNeededMMFeedback: {fileID: 0}
-  WeaponOnHitFeedback: {fileID: 0}
+  WeaponOnHitFeedback: {fileID: 7196056548705350578}
   WeaponOnMissFeedback: {fileID: 0}
   WeaponOnHitDamageableFeedback: {fileID: 0}
   WeaponOnHitNonDamageableFeedback: {fileID: 0}
@@ -166,7 +166,7 @@ MonoBehaviour:
   ApplyDamageOnTriggerStay: 1
   MinDamageCaused: 20
   MaxDamageCaused: 40
-  Knockback: 0
+  Knockback: 1
   KnockbackForce: {x: 10, y: 2}
   InvincibilityDuration: 0.5
 --- !u!1 &12680054434242481
