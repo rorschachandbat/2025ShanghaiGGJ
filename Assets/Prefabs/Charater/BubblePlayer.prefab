@@ -5394,7 +5394,6 @@ GameObject:
   - component: {fileID: 4428806340664321835}
   - component: {fileID: 4428806340664321839}
   - component: {fileID: 4428806340664219667}
-  - component: {fileID: 4387426882808740509}
   - component: {fileID: 4387426942070267199}
   - component: {fileID: 4428806340664211627}
   - component: {fileID: 4387426883778260675}
@@ -5482,7 +5481,7 @@ SpriteRenderer:
   m_Size: {x: 1.54, y: 1.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &4428806340671668299
@@ -5713,34 +5712,6 @@ MonoBehaviour:
   AirborneDistance: 0.5
   AirborneMinimumTime: 0.1
   CharacterBrain: {fileID: 0}
---- !u!114 &4387426882808740509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4428806340674523851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071d2257235e403da6c6a0a966d6683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  BlockingWeaponStates: 
-  CrawlAuthorized: 1
-  CrawlSpeed: 4
-  InputDriven: 1
-  ResizeColliderWhenCrouched: 0
-  CrouchedBoxColliderSize: {x: 0.47, y: 0.5}
-  CanCrouchWhileMoving: 1
-  CanMoveWhileCrouching: 1
-  InATunnel: 0
-  MoveCameraTarget: 1
-  CameraTargetOffset: {x: 0, y: -3, z: 0}
 --- !u!114 &4387426942070267199
 MonoBehaviour:
   m_ObjectHideFlags: 0
