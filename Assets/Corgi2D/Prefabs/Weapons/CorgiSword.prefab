@@ -681,7 +681,7 @@ MonoBehaviour:
     00000001:
       type: {class: MMF_CameraShake, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
-        Active: 1
+        Active: 0
         UniqueID: 1416940329
         Label: Camera Shake
         ChannelMode: 0
@@ -757,7 +757,7 @@ MonoBehaviour:
     00000002:
       type: {class: MMF_Flash, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -1796410357
         Label: Flash
         ChannelMode: 0
@@ -829,7 +829,7 @@ MonoBehaviour:
     00000003:
       type: {class: MMF_Bloom, ns: MoreMountains.FeedbacksForThirdParty, asm: MoreMountains.Feedbacks.PostProcessing}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -1143049670
         Label: Bloom
         ChannelMode: 0
@@ -972,7 +972,7 @@ MonoBehaviour:
       type: {class: MMF_ChromaticAberration, ns: MoreMountains.FeedbacksForThirdParty,
         asm: MoreMountains.Feedbacks.PostProcessing}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -223922925
         Label: Chromatic Aberration
         ChannelMode: 0
@@ -1081,7 +1081,7 @@ MonoBehaviour:
       type: {class: MMF_LensDistortion, ns: MoreMountains.FeedbacksForThirdParty,
         asm: MoreMountains.Feedbacks.PostProcessing}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -1867712047
         Label: Lens Distortion
         ChannelMode: 0

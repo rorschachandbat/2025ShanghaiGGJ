@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 11400000}
   - component: {fileID: 11400004}
   - component: {fileID: 11488376}
-  - component: {fileID: 11438508}
   - component: {fileID: 114000011019611894}
   - component: {fileID: 114000011317283156}
   - component: {fileID: 11480256}
@@ -335,20 +334,6 @@ MonoBehaviour:
   AirborneDistance: 0.5
   AirborneMinimumTime: 0.1
   CharacterBrain: {fileID: 0}
---- !u!114 &11438508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2701765792775de48a44254406e11096, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DestinationSceneName: 
-  CharacterPrefab: {fileID: 0}
 --- !u!114 &114000011019611894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -595,7 +580,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 114000010616902070, guid: a47edfe3feade4444b8060e34cb083f5,
+  InitialWeapon: {fileID: 114000010616902070, guid: efbb4a99654f6df45b608b082b192e2c,
     type: 3}
   CanPickupWeapons: 0
   WeaponAttachment: {fileID: 0}

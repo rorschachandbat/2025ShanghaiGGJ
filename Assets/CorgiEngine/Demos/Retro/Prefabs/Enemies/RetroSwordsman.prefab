@@ -317,6 +317,7 @@ MonoBehaviour:
   ResetColorOnRevive: 1
   ColorMaterialPropertyName: _Color
   UseMaterialPropertyBlocks: 0
+  AssociatedCharacter: {fileID: 0}
   MasterHealth: {fileID: 0}
   OnlyDamageMaster: 1
   KillOnMasterHealthDeath: 0
@@ -497,6 +498,10 @@ MonoBehaviour:
   DisplayDurationOnHit: 1
   HideBarAtZero: 1
   HideBarAtZeroDelay: 0
+  TestMinHealth: 0
+  TestMaxHealth: 100
+  TestCurrentHealth: 25
+  TestUpdateHealthButton: 0
 --- !u!114 &114507468984271598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,6 +538,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   BlockingWeaponStates: 
   WalkSpeed: 6
+  ResetHorizontalSpeedBtn: 0
   MovementSpeedMultiplier: 1
   AbilityMovementSpeedMultiplier: 1
   PushSpeedMultiplier: 1
@@ -570,6 +576,7 @@ MonoBehaviour:
   JumpRestrictions: 1
   ResetCameraOffsetOnJump: 0
   CanJumpDownOneWayPlatforms: 1
+  FixedAerialJumpCount: 0
   JumpIsProportionalToThePressTime: 1
   JumpMinimumAirTime: 0.1
   JumpReleaseForceFactor: 2
@@ -715,7 +722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  Radius: 4
+  Radius: 6
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayer:
     serializedVersion: 2
@@ -887,6 +894,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   InitializationMode: 2
+  AutoInitialization: 1
   SafeMode: 3
   Direction: 0
   AutoChangeDirectionOnEnd: 0
@@ -1046,6 +1054,7 @@ MonoBehaviour:
           ButtonText: Debug Stop Sound
         PlayMethod: 0
         PoolSize: 10
+        UseLegacyEventsMode: 0
         StopSoundOnFeedbackStop: 1
         MinVolume: 1
         MaxVolume: 1
@@ -1156,7 +1165,6 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 2259935668079098484}
         DebugActive: 0
-        DeclaredDuration: 0
         Mode: 1
         ObjectPoolSize: 5
         MutualizePools: 0
@@ -1167,6 +1175,7 @@ MonoBehaviour:
         RandomParticlePrefabs: []
         ForceSetActiveOnPlay: 0
         StopOnReset: 0
+        DeclaredDuration: 0
         PositionMode: 0
         InstantiateParticlesPosition: {fileID: 0}
         TargetWorldPosition: {x: 0, y: 0, z: 0}
@@ -1333,6 +1342,7 @@ MonoBehaviour:
   Feedbacks:
   - {fileID: 0}
   InitializationMode: 2
+  AutoInitialization: 1
   SafeMode: 3
   Direction: 0
   AutoChangeDirectionOnEnd: 0
@@ -1482,7 +1492,6 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 1212666344079549539}
         DebugActive: 0
-        DeclaredDuration: 0
         Mode: 1
         ObjectPoolSize: 5
         MutualizePools: 0
@@ -1493,6 +1502,7 @@ MonoBehaviour:
         RandomParticlePrefabs: []
         ForceSetActiveOnPlay: 0
         StopOnReset: 0
+        DeclaredDuration: 0
         PositionMode: 0
         InstantiateParticlesPosition: {fileID: 0}
         TargetWorldPosition: {x: 0, y: 0, z: 0}
