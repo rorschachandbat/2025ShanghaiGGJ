@@ -301,7 +301,8 @@ SpriteRenderer:
   m_SortingLayerID: 1795597123
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f6e4d225041a7284e8538c23793a5807, type: 3}
+  m_Sprite: {fileID: -7139905233811860086, guid: 60bdfb19231bac44186756af6e3a1b41,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -346,18 +347,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.16}
+  m_Offset: {x: -0.052669525, y: -0.011563301}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.12, y: 2}
+    oldSize: {x: 0.865, y: 0.86}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.92, y: 1.57}
+  m_Size: {x: 0.7612381, y: 0.9283714}
   m_EdgeRadius: 0
 --- !u!50 &1872794566282127077
 Rigidbody2D:
@@ -543,8 +544,9 @@ MonoBehaviour:
   CurrentHealth: 0
   TemporarilyInvulnerable: 0
   PostDamageInvulnerable: 0
-  InitialHealth: 10
+  InitialHealth: 100
   MaximumHealth: 100
+  spriteObject: {fileID: 0}
   Invulnerable: 0
   ImmuneToDamage: 0
   DamageFeedbacks: {fileID: 1872794566855057281}
@@ -559,7 +561,7 @@ MonoBehaviour:
   CollisionsOffOnDeath: 1
   GravityOffOnDeath: 0
   PointsWhenDestroyed: 10
-  HealthWhenDestroyed: 50
+  HealthWhenDestroyed: 20
   RespawnAtInitialLocation: 0
   ApplyDeathForce: 1
   DeathForce: {x: 0, y: 10}
