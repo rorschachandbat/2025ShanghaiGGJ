@@ -23,6 +23,9 @@ namespace MoreMountains.CorgiEngine
 		/// the number of projectiles to spawn per shot
 		[Tooltip("the number of projectiles to spawn per shot")]
 		public int ProjectilesPerShot = 1;
+		/// the direction of projectiles to spawn per shot
+		[Tooltip("the direction of projectiles to spawn per shot")]
+		public bool ProjectilesDoubleDirection = false;
 		/// the spread (in degrees) to apply randomly (or not) on each angle when spawning a projectile
 		[Tooltip("the spread (in degrees) to apply randomly (or not) on each angle when spawning a projectile")]
 		public Vector3 Spread = Vector3.zero;
@@ -92,6 +95,12 @@ namespace MoreMountains.CorgiEngine
 			for (int i = 0; i < ProjectilesPerShot; i++)
 			{
 				SpawnProjectile(SpawnPosition, i, ProjectilesPerShot, true);
+                if (ProjectilesDoubleDirection)
+                {
+					Flipped = !Flipped;
+					SpawnProjectile(SpawnPosition, i, ProjectilesPerShot, true);
+					Flipped = !Flipped;
+				}
 			}			
 		}
 
