@@ -6111,8 +6111,8 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  DashDistance: 4
-  DashForce: 40
+  DashDistance: 1
+  DashForce: 20
   ResetForcesOnExit: 0
   ForceExactDistance: 0
   DetachFromMovingPlatformsOnDash: 0
