@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using UnityEngine.SceneManagement;
 using MoreMountains.Tools;
 using MoreMountains.MMInterface;
+using UnityEngine.UI;
 
 namespace MoreMountains.CorgiEngine
 {
@@ -41,6 +42,8 @@ namespace MoreMountains.CorgiEngine
 		[Tooltip("the switch used to turn sfx on or off")]
 		public MMSwitch SfxSwitch;
 
+		public Button startButton;
+
 		/// <summary>
 		/// Initialization
 		/// </summary>
@@ -74,6 +77,8 @@ namespace MoreMountains.CorgiEngine
 				SfxSwitch.CurrentSwitchState = MMSoundManager.Instance.settingsSo.Settings.SfxOn ? MMSwitch.SwitchStates.Right : MMSwitch.SwitchStates.Left;
 				SfxSwitch.InitializeState ();
 			}
+
+			startButton.onClick.AddListener(ButtonPressed);
 		}
 
 		/// <summary>
