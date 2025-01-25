@@ -40,6 +40,9 @@ namespace MoreMountains.CorgiEngine
 		/// the duration of the in and out fades
 		[Tooltip("the duration of the in and out fades")]
 		public float FadeDuration=0.2f;
+		/// the duration of the in and out fades
+		[Tooltip("the duration of the in and out fades")]
+		public float FadeOutDuration = 0.2f;
 		/// the time between two dialogues 
 		[Tooltip("the time between two dialogues ")]
 		public float TransitionTime=0.2f;
@@ -220,7 +223,7 @@ namespace MoreMountains.CorgiEngine
 			if (_currentIndex != 0)
 			{
 				// we turn the message off
-				_dialogueBox.FadeOut(FadeDuration);	
+				_dialogueBox.FadeOut(FadeOutDuration);	
 				// we wait for the specified transition time before playing the next dialogue
 				yield return _transitionTimeWFS;
 			}	
