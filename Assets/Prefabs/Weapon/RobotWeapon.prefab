@@ -161,7 +161,7 @@ MonoBehaviour:
   ProjectilesDoubleDirection: 1
   Spread: {x: 0, y: 0, z: 0}
   RotateWeaponOnSpread: 0
-  RandomSpread: 1
+  RandomSpread: 0
   ObjectPooler: {fileID: 0}
   SpawnPosition: {x: -4.9250145, y: -13.861907, z: 0}
 --- !u!114 &1586802475147594886
