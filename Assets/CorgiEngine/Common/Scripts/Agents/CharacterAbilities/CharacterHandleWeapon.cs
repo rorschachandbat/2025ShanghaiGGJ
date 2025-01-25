@@ -63,6 +63,9 @@ namespace MoreMountains.CorgiEngine
 		/// if this is true, the character will continuously fire its weapon
 		[Tooltip("if this is true, the character will continuously fire its weapon")]
 		public bool ForceAlwaysShoot = false;
+		/// if this is not zero, the character will minus health before use its weapon
+		[Tooltip("if this is not zero, the character will minus health before use its weapon")]
+		public int NeedHealthBeforeUsed = 0;
 
 		[Header("Buffering")]
 
@@ -301,6 +304,17 @@ namespace MoreMountains.CorgiEngine
 			     || ((_condition.CurrentState != CharacterStates.CharacterConditions.Normal) && (_condition.CurrentState != CharacterStates.CharacterConditions.ControlledMovement)))
 			{
 				return;
+			}
+
+			if (NeedHealthBeforeUsed != 0)
+			{
+				Health characterHealth = gameObject.GetComponent<Health>();
+				// else, we give health to the player
+				if(NeedHealthBeforeUsed > characterHealth.CurrentHealth)
+                {
+					return;
+                }
+				characterHealth.GetHealth(-NeedHealthBeforeUsed, gameObject);
 			}
 
 			if (!CanShootFromLadders && (_movement.CurrentState == CharacterStates.MovementStates.LadderClimbing))

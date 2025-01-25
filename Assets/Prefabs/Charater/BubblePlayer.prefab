@@ -5944,6 +5944,7 @@ MonoBehaviour:
   FaceWeaponDirection: 0
   InvertHorizontalAimWhenWallclinging: 0
   ForceAlwaysShoot: 0
+  NeedHealthBeforeUsed: 0
   BufferInput: 0
   NewInputExtendsBuffer: 0
   MaximumBufferDuration: 0.25
@@ -5979,6 +5980,7 @@ MonoBehaviour:
   CollisionsOffOnDeath: 1
   GravityOffOnDeath: 0
   PointsWhenDestroyed: 0
+  HealthWhenDestroyed: 0
   RespawnAtInitialLocation: 0
   ApplyDeathForce: 1
   DeathForce: {x: 0, y: 10}
@@ -6098,6 +6100,7 @@ MonoBehaviour:
   FaceWeaponDirection: 0
   InvertHorizontalAimWhenWallclinging: 0
   ForceAlwaysShoot: 0
+  NeedHealthBeforeUsed: 10
   BufferInput: 0
   NewInputExtendsBuffer: 0
   MaximumBufferDuration: 0.25
