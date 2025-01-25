@@ -22715,7 +22715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: e21a05b91e88ead4eaa250bbc9063756, type: 3}
       propertyPath: orthographic size
-      value: 3.2
+      value: 4.11
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: e21a05b91e88ead4eaa250bbc9063756, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -22747,11 +22747,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: e21a05b91e88ead4eaa250bbc9063756, type: 3}
       propertyPath: MaximumZoom
-      value: 3.3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: e21a05b91e88ead4eaa250bbc9063756, type: 3}
       propertyPath: MinimumZoom
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e21a05b91e88ead4eaa250bbc9063756, type: 3}
