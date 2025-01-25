@@ -147,6 +147,7 @@ MonoBehaviour:
   DamageOverTimeInterruptible: 1
   RepeatedDamageType: {fileID: 0}
   DamageTakenEveryTime: 10
+  NeedDamageSelf: 1
   DamageTakenDamageable: 5
   DamageTakenNonDamageable: 10
   DamageTakenKnockbackType: 0

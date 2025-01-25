@@ -89,6 +89,9 @@ namespace MoreMountains.CorgiEngine
 		/// The amount of damage taken every time, whether what we collide with is damageable or not
 		[Tooltip("The amount of damage taken every time, whether what we collide with is damageable or not")]
 		public float DamageTakenEveryTime = 0;
+		/// 是否需要伤害自己
+		[Tooltip("是否需要伤害自己")]
+		public bool NeedDamageSelf = false;
 		/// The amount of damage taken when colliding with a damageable object
 		[Tooltip("The amount of damage taken when colliding with a damageable object")]
 		public float DamageTakenDamageable = 0;
@@ -498,7 +501,10 @@ namespace MoreMountains.CorgiEngine
 			if (DamageTakenEveryTime + DamageTakenNonDamageable > 0)
 			{
 				HitNonDamageableFeedback?.PlayFeedbacks(this.transform.position);
-				SelfDamage(DamageTakenEveryTime + DamageTakenNonDamageable);
+                if (NeedDamageSelf)
+                {
+					//SelfDamage(DamageTakenEveryTime + DamageTakenNonDamageable);
+				}
 			}
 		}
 

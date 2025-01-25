@@ -503,6 +503,7 @@ MonoBehaviour:
   DamageOverTimeInterruptible: 1
   RepeatedDamageType: {fileID: 0}
   DamageTakenEveryTime: 0
+  NeedDamageSelf: 0
   DamageTakenDamageable: 0
   DamageTakenNonDamageable: 0
   DamageTakenKnockbackType: 0
@@ -805,7 +806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   ComparisonMode: 1
-  Distance: 7
+  Distance: 4.5
 --- !u!114 &6548284336200324557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -835,7 +836,7 @@ MonoBehaviour:
       - {fileID: 6548284336200324552}
     Transitions:
       array:
-      - Decision: {fileID: 6548284336200324571}
+      - Decision: {fileID: 6548284336200324554}
         TrueState: 
         FalseState: PatrolFindEnemy
   - StateName: PatrolFindEnemy
@@ -844,7 +845,7 @@ MonoBehaviour:
       - {fileID: 6548284336200324553}
     Transitions:
       array:
-      - Decision: {fileID: 6548284336200324571}
+      - Decision: {fileID: 6548284336200324554}
         TrueState: Shoot
         FalseState: 
   TimeInThisState: 0
