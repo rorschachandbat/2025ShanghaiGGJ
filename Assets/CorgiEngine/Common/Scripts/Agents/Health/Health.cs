@@ -81,6 +81,10 @@ namespace MoreMountains.CorgiEngine
 		[Tooltip("the maximum amount of health of the object")]
 		public float MaximumHealth = 10;
 
+		/// spriteObject
+		[Tooltip("spriteObject")]
+		public GameObject spriteObject; // 需要缩放的Sprite对象
+
 		/// if this is true, this object can't take damage
 		[Tooltip("if this is true, this object can't take damage")]
 		public bool Invulnerable = false;
@@ -1049,6 +1053,21 @@ namespace MoreMountains.CorgiEngine
 			HealthChangeEvent.Trigger(this, CurrentHealth);
 		}
 
+		private void UpdateSpriteScale()
+		{
+			if (spriteObject != null)
+			{
+				// 计算血量百分比 (0-1之间)
+				float healthPercent = CurrentHealth / MaximumHealth;
+
+				// 根据血量百分比计算缩放值
+				float newScale = Mathf.Lerp(2, 4, healthPercent);
+
+				// 设置新的缩放值
+				spriteObject.transform.localScale = new Vector3(newScale, newScale, 1f);
+			}
+		}
+
 		/// <summary>
 		/// Updates the character's health bar progress.
 		/// </summary>
@@ -1070,6 +1089,7 @@ namespace MoreMountains.CorgiEngine
 					}
 				}
 			}
+			UpdateSpriteScale();
 		}
 
 		/// <summary>
