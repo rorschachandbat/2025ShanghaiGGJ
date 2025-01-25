@@ -150,6 +150,10 @@ namespace MoreMountains.CorgiEngine
 		[Tooltip("the points the player gets when the object's health reaches zero")]
 		public int PointsWhenDestroyed;
 
+		/// the health the player gets when the object's health reaches zero
+		[Tooltip("the health the player gets when the object's health reaches zero")]
+		public int HealthWhenDestroyed;
+
 		/// if this is set to false, the character will respawn at the location of its death, otherwise it'll be moved to its initial position (when the scene started)
 		[Tooltip(
 			"if this is set to false, the character will respawn at the location of its death, otherwise it'll be moved to its initial position (when the scene started)")]
@@ -597,6 +601,15 @@ namespace MoreMountains.CorgiEngine
 			{
 				// we send a new points event for the GameManager to catch (and other classes that may listen to it too)
 				CorgiEnginePointsEvent.Trigger(PointsMethods.Add, PointsWhenDestroyed);
+			}
+
+			// Adds health if needed.
+			if (HealthWhenDestroyed != 0)
+			{
+
+				Health characterHealth = LevelManager.Instance.Players[0].GetComponent<Health>();
+				// else, we give health to the player
+				characterHealth.GetHealth(HealthWhenDestroyed, gameObject);
 			}
 
 			if (_animator != null)
