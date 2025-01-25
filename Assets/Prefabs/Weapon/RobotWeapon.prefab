@@ -10020,7 +10020,7 @@ MonoBehaviour:
     00000002:
       type: {class: MMF_CameraShake, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
-        Active: 1
+        Active: 0
         UniqueID: 2146727442
         Label: Camera Shake
         ChannelMode: 0
@@ -10096,7 +10096,7 @@ MonoBehaviour:
     00000003:
       type: {class: MMF_Flash, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -850291481
         Label: Flash
         ChannelMode: 0
