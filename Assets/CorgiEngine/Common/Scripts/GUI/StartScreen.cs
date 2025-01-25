@@ -44,6 +44,8 @@ namespace MoreMountains.CorgiEngine
 
 		public Button startButton;
 
+		public Button exitButton;
+
 		/// <summary>
 		/// Initialization
 		/// </summary>
@@ -79,6 +81,7 @@ namespace MoreMountains.CorgiEngine
 			}
 
 			startButton.onClick.AddListener(ButtonPressed);
+			exitButton.onClick.AddListener(QuitGame);
 		}
 
 		/// <summary>
@@ -100,6 +103,15 @@ namespace MoreMountains.CorgiEngine
 			MMFadeInEvent.Trigger(FadeOutDuration, Tween, 0, true);
 			// if the user presses the "Jump" button, we start the first level.
 			StartCoroutine (LoadFirstLevel ());
+		}
+
+		public void QuitGame()
+		{
+#if UNITY_EDITOR
+			UnityEditor.EditorApplication.isPlaying = false; // 在Unity编辑器中退出播放模式
+#else
+            Application.Quit(); // 在构建好的游戏中退出应用
+#endif
 		}
 
 		/// <summary>
