@@ -243,7 +243,6 @@ GameObject:
   - component: {fileID: 6548284336200324554}
   - component: {fileID: 6548284336200324557}
   - component: {fileID: 6548284336200324571}
-  - component: {fileID: 2591285511627989175}
   m_Layer: 13
   m_Name: GunMonster
   m_TagString: Untagged
@@ -877,27 +876,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 264448
   LineOfSightOffset: {x: 0, y: 0, z: 0}
---- !u!114 &2591285511627989175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6548284335708382862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df1508296b0904b1ba069c225eb6482a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RespawnOnPlayerRespawn: 1
-  RepositionToInitOnPlayerRespawn: 0
-  DisableOnKill: 1
-  AutoRespawnDuration: 0
-  AutoRespawnAmount: 3
-  AutoRespawnRemainingAmount: 3
-  IgnoreCheckpointsAlwaysRespawn: 1
-  AssociatedCheckpoints: []
-  RespawnFeedback: {fileID: 0}
 --- !u!1 &6880128791312475162
 GameObject:
   m_ObjectHideFlags: 0
