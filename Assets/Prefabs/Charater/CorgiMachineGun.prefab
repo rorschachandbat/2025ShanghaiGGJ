@@ -4819,7 +4819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7ce0b8cf4b34859b9e359283b2e7f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TriggerMode: 1
+  TriggerMode: 0
   Interruptable: 0
   InitializeOnStart: 0
   DelayBeforeUse: 0
@@ -10147,7 +10147,7 @@ MonoBehaviour:
     00000000:
       type: {class: MMF_Particles, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -1866326669
         Label: Particles Play - Flames
         ChannelMode: 0
@@ -10227,7 +10227,7 @@ MonoBehaviour:
     00000001:
       type: {class: MMF_Particles, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -1115740321
         Label: Particles Play - Shells
         ChannelMode: 0

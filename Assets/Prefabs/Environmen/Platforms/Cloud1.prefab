@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8443820119856748205}
   - component: {fileID: 8443820119835996333}
-  - component: {fileID: 277254775050145552}
+  - component: {fileID: 5531607990304981671}
   m_Layer: 8
   m_Name: Cloud1
   m_TagString: Background
@@ -84,8 +84,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &277254775050145552
-PolygonCollider2D:
+--- !u!61 &5531607990304981671
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -97,7 +97,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 105, y: -40.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 1}
@@ -107,29 +107,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 198, y: -69}
-      - {x: 203, y: -64}
-      - {x: 203, y: -45}
-      - {x: 196, y: -37}
-      - {x: 182, y: -24}
-      - {x: 175, y: -17}
-      - {x: 163, y: -15}
-      - {x: 150, y: -6}
-      - {x: 133, y: -6}
-      - {x: 112, y: -17}
-      - {x: 85, y: -24}
-      - {x: 67, y: -29}
-      - {x: 52, y: -37}
-      - {x: 31, y: -59}
-      - {x: 19, y: -59}
-      - {x: 11, y: -52}
-      - {x: 9, y: -51}
-      - {x: 8, y: -53}
-      - {x: 8, y: -64}
-      - {x: 20, y: -74}
-      - {x: 35, y: -74}
-      - {x: 91, y: -60}
-      - {x: 137, y: -60}
-      - {x: 181, y: -68}
+  serializedVersion: 2
+  m_Size: {x: 210, y: 81}
+  m_EdgeRadius: 0

@@ -715,7 +715,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: spaceCorgiMelee
-  m_Speed: 1
+  m_Speed: 3
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -1022,7 +1022,7 @@ AnimatorStateMachine:
     m_Position: {x: 190, y: -40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110202904}
-    m_Position: {x: 192, y: 204, z: 0}
+    m_Position: {x: 190, y: 200, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110297304}
     m_Position: {x: 192, y: 108, z: 0}
@@ -1055,16 +1055,16 @@ AnimatorStateMachine:
     m_Position: {x: 192, y: 900, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110236784}
-    m_Position: {x: 192, y: 540, z: 0}
+    m_Position: {x: 210, y: 540, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102000013911810556}
     m_Position: {x: 192, y: 348, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102000014250786802}
-    m_Position: {x: 192, y: 588, z: 0}
+    m_Position: {x: 190, y: 610, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102550736421740682}
-    m_Position: {x: 192, y: 804, z: 0}
+    m_Position: {x: 190, y: 800, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 1101000010845231064}
@@ -1220,8 +1220,8 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.1
   m_TransitionOffset: 0
-  m_ExitTime: 0.9
-  m_HasExitTime: 0
+  m_ExitTime: 1.2
+  m_HasExitTime: 1
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -1374,11 +1374,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25284234
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 2.6421293e-10
+  m_ExitTime: 0.0000000035878176
   m_HasExitTime: 0
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 0
@@ -1581,7 +1581,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions: []
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 110239292}
+  m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1603,7 +1603,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions: []
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 110239292}
+  m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1687,7 +1687,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions: []
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 110239292}
+  m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1709,7 +1709,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions: []
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 110239292}
+  m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1793,7 +1793,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions: []
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 110239292}
+  m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1878,7 +1878,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 1e95930cf60cf11429fcb5995990d495, type: 2}
+  m_Motion: {fileID: 7400000, guid: efe084ccf0cddbc45a57c1629ba5739e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

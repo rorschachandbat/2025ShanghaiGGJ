@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 282101678808045266}
   - component: {fileID: 282101678786769106}
-  - component: {fileID: 566962408644771750}
+  - component: {fileID: 1338981643164927079}
   m_Layer: 8
   m_Name: Platform8
   m_TagString: Background
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &566962408644771750
+--- !u!60 &1338981643164927079
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,7 +118,7 @@ PolygonCollider2D:
       - {x: 474.10605, y: 22.155552}
       - {x: 471.8616, y: -87.822235}
       - {x: -722.1829, y: -87.822235}
-      - {x: -737.89404, y: -76.60001}
+      - {x: -742.6396, y: -87.672935}
       - {x: -742.38293, y: -99.04446}
       - {x: -742.38293, y: -186.5778}
       - {x: -731.1607, y: -193.31113}

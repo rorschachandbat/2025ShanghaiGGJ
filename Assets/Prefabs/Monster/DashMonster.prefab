@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 6665035825872104377}
   - component: {fileID: 8294263464426197682}
   - component: {fileID: 3017612978424851716}
+  - component: {fileID: -1728060093472419389}
   m_Layer: 13
   m_Name: DashMonster
   m_TagString: Untagged
@@ -490,8 +491,8 @@ MonoBehaviour:
   CurrentHealth: 0
   TemporarilyInvulnerable: 0
   PostDamageInvulnerable: 0
-  InitialHealth: 10
-  MaximumHealth: 10
+  InitialHealth: 50
+  MaximumHealth: 50
   spriteObject: {fileID: 0}
   Invulnerable: 0
   ImmuneToDamage: 0
@@ -506,7 +507,7 @@ MonoBehaviour:
   DelayBeforeDestruction: 0
   CollisionsOffOnDeath: 1
   GravityOffOnDeath: 0
-  PointsWhenDestroyed: 100
+  PointsWhenDestroyed: 50
   HealthWhenDestroyed: 20
   RespawnAtInitialLocation: 0
   ApplyDeathForce: 1
@@ -533,10 +534,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RespawnOnPlayerRespawn: 1
-  RepositionToInitOnPlayerRespawn: 0
+  RepositionToInitOnPlayerRespawn: 1
   DisableOnKill: 1
   AutoRespawnDuration: 0
-  AutoRespawnAmount: 3
+  AutoRespawnAmount: -1
   AutoRespawnRemainingAmount: 3
   IgnoreCheckpointsAlwaysRespawn: 1
   AssociatedCheckpoints: []
@@ -853,7 +854,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   BlockingWeaponStates: 
   DashDistance: 3
-  DashForce: 40
+  DashForce: 20
   ResetForcesOnExit: 0
   ForceExactDistance: 0
   DetachFromMovingPlatformsOnDash: 0
@@ -939,6 +940,23 @@ MonoBehaviour:
   HitNonDamageableFeedback: {fileID: 0}
   FreezeFramesOnHitDuration: 0
   Owner: {fileID: 0}
+--- !u!114 &-1728060093472419389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7410922314492125054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e514a2b7cbba3c94fadd9e100df51189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Top: 1
+  Bottom: 2
+  Left: 1
+  Right: 1
+  ResetForcesOnConstrain: 1
 --- !u!1 &8670037579917501877
 GameObject:
   m_ObjectHideFlags: 0
